@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About the Students</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 50px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* side-by-side */
+            column-gap: 40px; /* SPACE LEFT TO RIGHT */
+            row-gap: 40px;    /* SPACE TOP TO BOTTOM */
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .photo-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .description {
+            padding: 15px;
+        }
+
+        .description h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .description p {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Responsive fix for small screens */
+        @media (max-width: 900px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <H1>
+    <!--Our Team-->
+  </H1>  
+
+    <div class="gallery">
+
+        <div class="photo-card">
+            <img src="image.png" alt="image.png">
+            <div class="image.png">
+                <h3>ZANGIEF ARKIN BRIONES
+</h3>
+                <p>He is our leader and he has contributed allot.</p>
+            </div>
+        </div>
+
+        <div class="photo-card">
+            <img src="image copy.png" alt="image copy.png">
+            <div class="image copy.png">
+                <h3>JARENCE MA�ACAP</h3>
+                <p>He has contributed allot too.</p>
+            </div>
+        </div>
+
+        <div class="photo-card">
+            <img src="image copy 2.png" alt="image copy 2.png">
+            <div class="image copy 2.png">
+                <h3>Taranbir Singh</h3>
+                <p>I myself has contributed.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    
+
+</body>
+</html>
